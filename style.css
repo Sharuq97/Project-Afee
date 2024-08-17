@@ -1,0 +1,21 @@
+html, body{
+    background-color: black;
+    color:lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    background-color: black;
+    margin: 5%;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0px, 10px, 20px white;
+}
+/* PleaseLogin */
+h2{
+    font-size: 20px;
+    
+}
+
