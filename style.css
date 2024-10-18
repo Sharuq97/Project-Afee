@@ -1,21 +1,133 @@
-html, body{
-    background-color: black;
-    color:lavender;
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: rgb(45, 0, 0);
+    color: #5c1a2e;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.login-box{
+.container {
     background-color: black;
-    margin: 5%;
-    padding: 10px;
-    font-size: 20px;
-    box-shadow: 0px, 10px, 20px white;
-}
-/* PleaseLogin */
-h2{
-    font-size: 20px;
-    
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #c54b6a;
+}
+
+h3, h4 {
+    color: #e57a7a;
+    outline-color: white ;
+}
+
+#login-form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e57a7a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #c54b6a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #e57a7a;
+}
+
+.hidden {
+    display: none;
+}
+
+#balloons,
+#confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.balloon {
+    position: absolute;
+    bottom: -50px;
+    width: 50px;
+    height: 70px;
+    background: linear-gradient(to bottom, #f64e4e, #d70000);
+    border-radius: 50% 50% 20% 20%;
+    animation: float 6s ease-in forwards;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #e57a7a;
+    opacity: 0.8;
+    animation: fall 9s linear forwards;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Add a background image of roses */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path/to/rose-background.jpg') no-repeat center center fixed;
+    opacity: 0.1;
+    z-index: -1;
+}

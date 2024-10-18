@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You</title>
     <link rel="stylesheet" href="style.css">
+    <title>For You</title>
 </head>
 <body>
-    <h1>
-        <table>
-            <div class="login-box">
-                <h2>Login</h2>
-                <form action="#" method="post">
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="password" name="password" placeholder="Password" required>
-                    <input type="submit" value="Login">
-                </form>
-            </div>
-        </table>
-    </h1>    
+    <div class="container">
+
+         <!--login part-->
+        <h1>💕💕💕💕💕💕💕💕💕💕💕💕💕💕</h1>
+        <div id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!--after login-->
+        <div id="message" class="hidden">
+            <h2>Happy Birthday my dearest AFREEN FARHANA...!</h2>
+            <h3>The most beautiful girl ever in my eyes.</h3>
+            <h4> And I LOVE YOUUU</h4>
+            <p id="age"></p>
+            <div id="balloons"></div>
+            <div id="confetti"></div>
+        </div>
+    </div>
+
+    <!--audio-->
+
+    <audio id="remo" src="The Love Bug Has Bitten Bgm.mp3" preload="auto"></audio>
+    <!--link javascript-->
+    <script src="script.js"></script>
 </body>
 </html>
