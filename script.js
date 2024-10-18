@@ -1,19 +1,26 @@
 // activating the login.
 // username and password is from html
+
 function login() { 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
+    const loadingIndicator = document.getElementById("loading");
+
+    loadingIndicator.classList.remove("hidden");
 
     // login check
-    if (username === "ABC" && password === "1234") {
+    if (username === "AfreenFarhana" && password === "Heidi2001") {
         document.getElementById("login-form").style.display = "none";
 
         //audio part
         const audio = document.getElementById("remo");
         audio.play();
         
-        setTimeout(() => {
-        document.getElementById("message").classList.remove("hidden");
+    setTimeout(() => {
+        loadingIndicator.classList.add("hidden"); // Hide loading indicator
+        const messageElement = document.getElementById("message");
+        messageElement.classList.remove("hidden");
+        messageElement.classList.add("visible");
         displayAge();
         createBalloons();
         createConfetti();

@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Georgia', serif;
-    background-color: rgb(45, 0, 0);
+    background-color: black;
     color: #5c1a2e;
     display: flex;
     justify-content: center;
@@ -17,9 +17,9 @@ body {
 
 .container {
     background-color: black;
-    padding: 20px;
+    padding: 50px;
     border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -35,9 +35,15 @@ h2 {
     color: #c54b6a;
 }
 
+h3, h4 {
+    color: #e57a7a;
+    outline-color: white ;
+}
 
 #login-form {
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
@@ -51,7 +57,7 @@ input[type="password"] {
 }
 
 button {
-    background-color: #c54b6a;
+    background-color: #ff0000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -61,8 +67,35 @@ button {
 }
 
 button:hover {
-    background-color: #e57a7a;
+    background-color: #630303;
 }
+
+/*spinner - loading*/
+.hidden {
+    display: none;
+}
+
+#loading {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 .hidden {
     display: none;
@@ -115,15 +148,15 @@ button:hover {
     }
 }
 
-/* Add a background image of roses */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('path/to/rose-background.jpg') no-repeat center center fixed;
-    opacity: 0.1;
-    z-index: -1;
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    #loading {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin-top: 10px;
+    }
+
+    .spinner {
+        width: 20px; /* Smaller spinner */
+        height: 20px; /* Smaller spinner */
+    }
 }
