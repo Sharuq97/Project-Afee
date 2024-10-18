@@ -7,14 +7,18 @@ function login() {
     // login check
     if (username === "AfreenFarhana" && password === "Heidi2001") {
         document.getElementById("login-form").style.display = "none";
+
+        //audio part
+        const audio = document.getElementById("remo");
+        audio.play();
+        
+        setTimeout(() => {
         document.getElementById("message").classList.remove("hidden");
         displayAge();
         createBalloons();
         createConfetti();
 
-        //audio part
-        const audio = document.getElementById("remo");
-        audio.play();
+    }, 8000);
 
     } else {
         alert("Incorrect username or password. Try again!")
