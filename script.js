@@ -5,7 +5,7 @@ function login() {
     const password = document.getElementById("password").value;
 
     // login check
-    if (username === "AfreenFarhana" && password === "Heidi2001") {
+    if (username === "ABC" && password === "1234") {
         document.getElementById("login-form").style.display = "none";
 
         //audio part
