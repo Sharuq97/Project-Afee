@@ -25,7 +25,7 @@ function login() {
         createBalloons();
         createConfetti();
 
-    }, 8000);
+    }, 9050);
 
     } else {
         alert("Incorrect username or password. Try again!")
