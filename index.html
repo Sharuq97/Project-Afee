@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>For You</title>
 </head>
+
 <body>
     <div class="container">
 
-         <!--login part-->
-        <h1>💕💕💕💕💕💕💕💕💕💕💕💕💕💕</h1>
+        <!--login part-->
         <div id="login-form">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
             <button onclick="login()">Login</button>
         </div>
 
-        <!--loading part-->
-        <div id="loading" class="hidden">Loading...</div>
-        
+        <!-- loading spinner -->
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+        </div>
+
         <!--after login-->
         <div id="message" class="hidden">
             <h2>Happy Birthday my dearest AFREEN FARHANA...!</h2>
@@ -33,8 +36,9 @@
 
     <!--audio-->
     <audio id="remo" src="Sai-Pallavi's-Intro-MassTamilan.dev.mp3" preload="auto"></audio>
-    
+
     <!--link javascript-->
     <script src="script.js"></script>
 </body>
+
 </html>

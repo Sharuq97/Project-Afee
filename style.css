@@ -23,11 +23,6 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #ff0000;
-}
 
 h2 {
     font-size: 28px;
@@ -74,6 +69,7 @@ button:hover {
 .hidden {
     display: none;
 }
+
 
 #loading {
     font-size: 20px;
