@@ -44,7 +44,7 @@ function displayAge() {
 //balloons
 function createBalloons() {
     const balloonsContainer = document.getElementById("balloons");
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 50; i++) {
         const balloon = document.createElement("div");
         balloon.className = "balloon";
         balloon.style.left = Math.random() * 100 + "vw"; //random position
@@ -56,7 +56,7 @@ function createBalloons() {
 //confetti
 function createConfetti() {
     const confettiContainer = document.getElementById("confetti");
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < 200; i++) {
         const confetti = document.createElement("div");
         confetti.className = "confetti";
         confetti.style.left = Math.random() * 100 + "vw";
