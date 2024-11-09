@@ -56,7 +56,7 @@ function createBalloons() {
 //confetti
 function createConfetti() {
     const confettiContainer = document.getElementById("confetti");
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 600; i++) {
         const confetti = document.createElement("div");
         confetti.className = "confetti";
         confetti.style.left = Math.random() * 100 + "vw";
